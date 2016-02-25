@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <title>Correction Application</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container-input"></div>
+ 
+  <script>
+	$('#container-input').highcharts({
+        	title: {
+            		text: 'Input',
+            		x: -20 //center
+        	},
+		series: [{
+            		name: 'input',
+            		data: {{ Input }}
+        	},{
+            		name: 'setpoint',
+            		data: {{ Setpoint}}
+        	},{
+            		name: 'output',
+            		data: {{ Output }}
+        	},{
+				name: 'ouput2',
+				data: {{ Output2 }}
+		}]
+	});
+  </script>
+
+</body>
+</html>
