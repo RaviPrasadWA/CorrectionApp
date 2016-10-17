@@ -25,12 +25,15 @@
             		name: 'setpoint',
             		data: {{ Setpoint}}
         	},{
-            		name: 'output',
+            		name: 'Moving_Average',
             		data: {{ Output }}
         	},{
-				name: 'ouput2',
-				data: {{ Output2 }}
-		}]
+					name: 'Rolling_Average',
+					data: {{ Output2 }}
+			},{
+					name: 'Kalman_Filter',
+					data: {{ Output3 }}
+			}]
 	});
   </script>
 
